@@ -12,16 +12,17 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('REGRISTARSE') }}
-                    </x-nav-link>
-                </div>
-
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('Informe')" :active="request()->routeIs('Informe')">
+                    <x-nav-link :href="route('registros.index')" :active="request()->routeIs('registros.index')">
                         {{ __('INFORMACION ESTUDIANTES') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('registros.create')" :active="request()->routeIs('registros.create')">
+                        {{ __('REGISTRARSE') }}
+                    </x-nav-link>
+                </div>
+
+
             </div>
 
 
